@@ -9,7 +9,7 @@ function WeatherBox({weather}) {
       <div className='city-color'><h3>{weather?.name}</h3></div>
       <h1>{Math.floor(weather?.main.temp)}C / {Math.floor(weather?.main.temp*((9/5)+32))}F</h1>
       <h2 className='des-color'>{weather?.weather[0].description}</h2>
-      <h3>Hum {weather?.main.humidity}%</h3>
+      <h3>Humidity : {weather?.main.humidity}%</h3>
     </div>
   )
 }
